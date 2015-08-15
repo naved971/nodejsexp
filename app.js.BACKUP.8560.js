@@ -10,16 +10,17 @@ var server = http.createServer(function(request,response){
 
 
 			var express = require('express')();
-			express.get('/nvd',function(req,res){
-				res.send('hello from 22');
-				res.end("hello from eee");
-			});
-					
-		var serverExpress = express.listen(322,'localhost',function(){
-				var host = serverExpress.address().address;
-				var port = serverExpress.address().port;	
-				console.log("Example app listening at http://%s:%s",host,port)
-		});
+				express.get('/nvd',function(req,res){
+					res.send('hello from 22');
+					res.end("hello from eee");
+					});
+				var serverExpress = express.listen(322,'localhost',function(){
+
+					var host = serverExpress.address().address;
+					var port = serverExpress.address().port;	
+
+					console.log("Example app listening at http://%s:%s",host,port)
+				});
 
 
 server.listen(885,'127.0.0.1',function(){
